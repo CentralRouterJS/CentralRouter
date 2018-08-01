@@ -2,7 +2,7 @@
 Fast, modern Data Delivery Network built on top of [NodeJS](http://nodejs.org).
 
 ## Installation
-    **Requirements**
+    Requirements
 
     CentralRouter requires Node.js:v8.0.0+ (Linux & Windows & Mac) and a git client.
 
