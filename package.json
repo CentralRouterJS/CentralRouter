@@ -1,0 +1,32 @@
+{
+  "name": "centralrouter",
+  "version": "1.0.0",
+  "description": "A DataDeliveryNetwork built on top of NodeJS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CentralRouterJS/CentralRouter.git"
+  },
+  "keywords": [
+    "DDN",
+    "NodeJS",
+    "Socket.io",
+    "Express.js"
+  ],
+  "author": "LeFizzy",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/CentralRouterJS/CentralRouter/issues"
+  },
+  "homepage": "https://github.com/CentralRouterJS/CentralRouter#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "supertest": "^3.1.0"
+  }
+}
