@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title>CentralRouterJS Server Manager (test)</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Add new service: </h1>
+
+            <form method="POST" action="/api/v1/addserver">
+                <input type="text" name="name" placeholder="Server name" />
+                <input type="text" name="address" placeholder="Server IP address" />
+                <select name="type">
+                    <option value="http">HTTP service</option>
+                </select>
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </body>
+</htmly>
