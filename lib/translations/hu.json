@@ -1,6 +1,7 @@
 {
     "app": {
         "express_start"     : "elindult a következő porton: ",
-        "wss_start"         : "elindult a következő porton: "
+        "wss_start"         : "elindult a következő porton: ",
+        "database_conn"     : "Adatbázis kapcsolat létrejött a kövekezővel: "
     }
 }

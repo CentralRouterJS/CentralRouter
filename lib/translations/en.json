@@ -1,6 +1,7 @@
 {
     "app": {
         "express_start"     : "started listening on",
-        "wss_start"         : "started listening on"
+        "wss_start"         : "started listening on",
+        "database_conn"     : "Database connection established with"
     }
 }
