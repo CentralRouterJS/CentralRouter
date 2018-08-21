@@ -4,7 +4,7 @@
   "description": "A DataDeliveryNetwork built on top of NodeJS.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "npm test"
   },
   "repository": {
     "type": "git",
