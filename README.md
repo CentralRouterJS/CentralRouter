@@ -1,5 +1,6 @@
 [![CentralRouter Logo](https://image.ibb.co/mSKP3z/centralrouter_branding_logo.png)](https://centralrouter.github.io/)
-[![Build Status](https://travis-ci.org/CentralRouterJS/CentralRouter.svg?branch=master)
+[![Build Status](https://travis-ci.org/CentralRouterJS/CentralRouter.svg?branch=master)](https://travis-ci.org/CentralRouterJS/CentralRouter)
+
 Fast, modern Data Delivery Network built on top of [NodeJS](http://nodejs.org).
 
 ## Installation
