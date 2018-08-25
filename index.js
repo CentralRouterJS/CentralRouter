@@ -1,4 +1,3 @@
-const expressService = require('./lib/app.js');
 const databaseService = require('./lib/database.js');
 const socketService = require('./lib/wss.js');
 const dotenv = require('dotenv').config();
@@ -37,8 +36,6 @@ class App {
      */
     init() {
         module.exports = appInstance;
-
-        expressService.init();
         databaseService.init();
         socketService.init();
     }

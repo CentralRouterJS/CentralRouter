@@ -3,5 +3,9 @@
         "express_start"     : "elindult a következő porton: ",
         "wss_start"         : "elindult a következő porton: ",
         "database_conn"     : "Adatbázis kapcsolat létrejött a kövekezővel: "
+    },
+    "wss": {
+        "log_connect"       : "Socket Interface kliens csatlakozott a szolgáltatáshoz.",
+        "log_disconnect"    : "Socket Interface kliens lecsatlakozott a szolgáltatásról."
     }
 }

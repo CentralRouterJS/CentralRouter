@@ -23,11 +23,13 @@
   },
   "homepage": "https://github.com/CentralRouterJS/CentralRouter#readme",
   "dependencies": {
+    "delivery": "0.0.6",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "mongoose": "^5.2.6",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
+    "socket.io": "^2.1.1",
     "wildcard-subdomains": "^1.1.0"
   },
   "devDependencies": {
