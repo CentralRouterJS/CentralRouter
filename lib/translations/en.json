@@ -5,7 +5,7 @@
         "database_conn"     : "Database connection established with"
     },
     "wss": {
-        "log_connect"       : "Socket Interface client connected to the services.",
+        "log_connect"       : "Socket Interface client connected to the services from: ",
         "log_disconnect"    : "Socket Interface client disconnected from the services."
     }
 }

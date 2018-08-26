@@ -1,5 +1,6 @@
 const databaseService = require('./lib/database.js');
 const socketService = require('./lib/wss.js');
+const redis = require('redis');
 const dotenv = require('dotenv').config();
 
 /** Class representing the CentralRouter instance. */
@@ -17,7 +18,7 @@ class App {
      * @param {String} appDBPass
      * @param {String} appLocale 
      */
-    constructor(appWebName, appWebPort, appDomain, appWssName, appWssPort, appDBHost, appDBPort, appDBName, appDBUser, appDBPass, appLocale) {
+    constructor(appWebName, appWebPort, appDomain, appWssName, appWssPort, appDBHost, appDBPort, appDBName, appDBUser, appDBPass, redisPort, appLocale) {
         this.webName    = appWebName || "CentralRouter:WEB";
         this.webPort    = appWebPort || 8080;
         this.webDomain  = appDomain  || "localhost";
@@ -28,6 +29,7 @@ class App {
         this.dbName     = appDBName  || "centralrouter";
         this.dbUser     = appDBUser  || "";
         this.dbPass     = appDBPass  || "";
+        this.redisPort  = redisPort  || 6379;
         this.locale     = require(`./lib/translations/${appLocale}.json`) || require(`./lib/translations/en.json`);
     }
 
@@ -35,7 +37,16 @@ class App {
      * App init method, depends on app-module.
      */
     init() {
-        module.exports = appInstance;
+        const redisClient = redis.createClient(this.redisPort);
+        const EventEmitter = require('events');
+        class LocalSocketEmitter extends EventEmitter {};
+        const localSocket = new LocalSocketEmitter();
+
+        module.exports = {
+            appInstance: appInstance,
+            redisClient: redisClient,
+            localSocket: localSocket
+        };
         databaseService.init();
         socketService.init();
     }
@@ -52,6 +63,7 @@ const appInstance = new App(
     process.env.DATABASE_NAME,
     process.env.DATABASE_USER, 
     process.env.DATABASE_PASS,
+    process.env.REDIS_PORT,
     process.env.APP_LOCALE
 );
 appInstance.init();

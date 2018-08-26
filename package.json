@@ -29,6 +29,7 @@
     "mongoose": "^5.2.6",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
+    "redis": "^2.8.0",
     "socket.io": "^2.1.1",
     "wildcard-subdomains": "^1.1.0"
   },

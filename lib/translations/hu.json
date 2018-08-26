@@ -5,7 +5,7 @@
         "database_conn"     : "Adatbázis kapcsolat létrejött a kövekezővel: "
     },
     "wss": {
-        "log_connect"       : "Socket Interface kliens csatlakozott a szolgáltatáshoz.",
+        "log_connect"       : "Socket Interface kliens csatlakozott a szolgáltatáshoz erről: ",
         "log_disconnect"    : "Socket Interface kliens lecsatlakozott a szolgáltatásról."
     }
 }
