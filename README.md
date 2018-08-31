@@ -1,5 +1,5 @@
 [![CentralRouter Logo](https://image.ibb.co/mSKP3z/centralrouter_branding_logo.png)](https://centralrouter.github.io/)
-[![Build Status](https://travis-ci.org/CentralRouterJS/CentralRouter.svg?branch=master)](https://travis-ci.org/CentralRouterJS/CentralRouter)
+[![Build Status](https://travis-ci.org/CentralRouterJS/CentralRouter.svg?branch=master)](https://travis-ci.org/CentralRouterJS/CentralRouter) [Trello board](https://trello.com/b/fp6jPIC9/centralrouter-roadmap)
 
 Fast, modern Data Delivery Network built on top of [NodeJS](http://nodejs.org).
 
@@ -33,6 +33,7 @@ Feel free to join the project community using the links below.
 ## Docs & Community
 
 * [Website and Documentation](https://centralrouter.github.io/)
+* [Discord](https://discord.gg/n9yFj2F)
 
 ## Testing
 
