@@ -3,22 +3,26 @@
 
 Fast, modern Data Delivery Network built on top of [NodeJS](http://nodejs.org).
 
-## Installation
-Requirements
-
-CentralRouter requires Node.js:v8.0.0+ (Linux & Windows & Mac) and a git client.
-
-Grab the latest release using:
-
+## Running with Docker
 ```bash
-$ git clone https://github.com/centralrouterjs/centralrouter
+$ docker-compose up
 ```
 
-And install dependencies via:
+## Running with NodeJS
+Requirements:
+- MongoDB 
+- Redis
+
+Firstly, you must edit the environment (.env) file by removing "mongo" from/after DATABASE_HOST,
+then "redis" from/after REDIS_HOST variable.
+Secondly, let's spin the application up like below:
+
 ```bash
 $ npm install
 ```
-
+```bash
+$ node index.js
+```
 ## About the project
 
 Maybe you got the question: what is CentralRouter?

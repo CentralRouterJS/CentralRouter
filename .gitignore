@@ -1,3 +1,6 @@
 node_modules/
 .vscode/
 dump.rdb
+data/
+.package.json.swp
+npm-debug.log

@@ -18,7 +18,7 @@ class App {
      * @param {String} appDBPass
      * @param {String} appLocale 
      */
-    constructor(appWebName, appWebPort, appDomain, appWssName, appWssPort, appDBHost, appDBPort, appDBName, appDBUser, appDBPass, redisPort, appLocale) {
+    constructor(appWebName, appWebPort, appDomain, appWssName, appWssPort, appDBHost, appDBPort, appDBName, appDBUser, appDBPass, redisHost, redisPort, appLocale) {
         this.webName    = appWebName || "CentralRouter:WEB";
         this.webPort    = appWebPort || 8080;
         this.webDomain  = appDomain  || "localhost";
@@ -29,6 +29,7 @@ class App {
         this.dbName     = appDBName  || "centralrouter";
         this.dbUser     = appDBUser  || "";
         this.dbPass     = appDBPass  || "";
+        this.redisHost  = redisHost  || "localhost";
         this.redisPort  = redisPort  || 6379;
         this.locale     = require(`./lib/translations/${appLocale}.json`) || require(`./lib/translations/en.json`);
     }
@@ -37,7 +38,10 @@ class App {
      * App init method, depends on app-module.
      */
     init() {
-        const redisClient = redis.createClient(this.redisPort);
+        const redisClient = redis.createClient({
+            host: this.redisHost,
+            port: this.redisPort
+        });
         const EventEmitter = require('events');
         class LocalSocketEmitter extends EventEmitter {};
         const localSocket = new LocalSocketEmitter();
@@ -49,6 +53,9 @@ class App {
         };
         databaseService.init();
         socketService.init();
+        if(typeof redisClient != "undefined") {
+            console.log(`Redis connection established with ${this.redisHost}:${this.redisPort}!`);
+        }
     }
 }
 
@@ -63,6 +70,7 @@ const appInstance = new App(
     process.env.DATABASE_NAME,
     process.env.DATABASE_USER, 
     process.env.DATABASE_PASS,
+    process.env.REDIS_HOST,
     process.env.REDIS_PORT,
     process.env.APP_LOCALE
 );
