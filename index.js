@@ -54,7 +54,7 @@ class App {
         databaseService.init();
         socketService.init();
         if(typeof redisClient != "undefined") {
-            console.log(`Redis connection established with ${this.redisHost}:${this.redisPort}!`);
+            console.log(`${this.locale.app.redis_conn} ${this.redisHost}:${this.redisPort}!`);
         }
     }
 }

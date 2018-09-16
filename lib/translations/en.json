@@ -2,7 +2,8 @@
     "app": {
         "express_start"     : "started listening on",
         "wss_start"         : "started listening on",
-        "database_conn"     : "Database connection established with"
+        "database_conn"     : "Database connection established with",
+        "redis_conn"        : "Redis connection established with"
     },
     "wss": {
         "log_connect"       : "Socket Interface client connected to the services from: ",
