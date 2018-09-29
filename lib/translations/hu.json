@@ -3,7 +3,7 @@
         "express_start"     : "elindult a következő porton: ",
         "wss_start"         : "elindult a következő porton: ",
         "database_conn"     : "Adatbázis kapcsolat létrejött a kövekezővel: ",
-        "redis_conn"        : "Redis connection established with"
+        "redis_conn"        : "Redis kapcsolat létrejött a következővel: "
     },
     "wss": {
         "log_connect"       : "Socket Interface kliens csatlakozott a szolgáltatáshoz erről: ",
