@@ -8,5 +8,10 @@
     "wss": {
         "log_connect"       : "Socket Interface kliens csatlakozott a szolgáltatáshoz erről: ",
         "log_disconnect"    : "Socket Interface kliens lecsatlakozott a szolgáltatásról."
+    },
+    "interfaces": {
+        "available"         : "[INTERFÉSZEK] Engedélyezett interfészek: ",
+        "missing"           : "[INTERFÉSZEK] Nincs interfész engedélyezve.",
+        "init_http"         : "[INTERFÉSZEK] HTTP Interface inicializálva."
     }
 }

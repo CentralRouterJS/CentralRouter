@@ -17,8 +17,12 @@ class App {
      * @param {String} appDBUser
      * @param {String} appDBPass
      * @param {String} appLocale 
+     * @param {String} interfacesEnabled
      */
-    constructor(appWebName, appWebPort, appDomain, appWssName, appWssPort, appDBHost, appDBPort, appDBName, appDBUser, appDBPass, redisHost, redisPort, appLocale) {
+    constructor(appWebName, appWebPort, appDomain, appWssName, 
+        appWssPort, appDBHost, appDBPort, appDBName, 
+        appDBUser, appDBPass, redisHost, redisPort, 
+        appLocale, interfacesEnabled) {
         this.webName    = appWebName || "CentralRouter:WEB";
         this.webPort    = appWebPort || 8080;
         this.webDomain  = appDomain  || "localhost";
@@ -32,6 +36,7 @@ class App {
         this.redisHost  = redisHost  || "localhost";
         this.redisPort  = redisPort  || 6379;
         this.locale     = require(`./lib/translations/${appLocale}.json`) || require(`./lib/translations/en.json`);
+        this.interfaces = interfacesEnabled || "";
     }
 
     /**
@@ -56,6 +61,12 @@ class App {
         if(typeof redisClient != "undefined") {
             console.log(`${this.locale.app.redis_conn} ${this.redisHost}:${this.redisPort}!`);
         }
+
+        if(this.interfaces != "") {
+            console.log(`${this.locale.interfaces.available} ${this.interfaces}`);
+        } else {
+            console.log(this.locale.interfaces.missing);
+        }
     }
 }
 
@@ -72,6 +83,7 @@ const appInstance = new App(
     process.env.DATABASE_PASS,
     process.env.REDIS_HOST,
     process.env.REDIS_PORT,
-    process.env.APP_LOCALE
+    process.env.APP_LOCALE,
+    process.env.INTERFACES_ENABLED
 );
 appInstance.init();
