@@ -39,6 +39,17 @@ Feel free to join the project community using the links below.
 * [Website and Documentation](https://centralrouter.github.io/)
 * [Discord](https://discord.gg/n9yFj2F)
 
+## Interfaces
+
+CentralRouter is integrating with various protocols, which is called "interfaces".
+By default, all of the interfaces are disabled for security reasons.
+
+Interfaces currently implemented:
+
+| Name | Port | Description |
+| ---- | ---- | ----------- |
+| HTTP |  80  | HTTP methods are served. |
+
 ## Testing
 
 Testing is done using [mocha](https://mochajs.org/):
