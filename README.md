@@ -1,43 +1,40 @@
 [![CentralRouter Logo](https://image.ibb.co/mSKP3z/centralrouter_branding_logo.png)](https://centralrouter.github.io/)
 [![Build Status](https://travis-ci.org/CentralRouterJS/CentralRouter.svg?branch=master)](https://travis-ci.org/CentralRouterJS/CentralRouter) [Trello board](https://trello.com/b/fp6jPIC9/centralrouter-roadmap)
 
-Fast, modern Data Delivery Network built on top of [NodeJS](http://nodejs.org).
+Fast, modern Data Delivery Network built on top of [NodeJS](http://nodejs.org). 
+CentralRouter is a learning project for me, based on a simple idea to access data from private
+networks securely, without even opening a port for the service.
 
-## Running with Docker
-```bash
-$ docker-compose up
-```
-
-## Running with NodeJS
-Requirements:
-- MongoDB 
-- Redis
-
-Firstly, you must edit the environment (.env) file by removing "mongo" from/after DATABASE_HOST,
-then "redis" from/after REDIS_HOST variable.
-Secondly, let's spin the application up like below:
-
-```bash
-$ npm install
-```
-```bash
-$ node index.js
-```
-## About the project
-
-Maybe you got the question: what is CentralRouter?
-
-It's a learning project for me, and I'd like to discover more-and-more features from NodeJS.
-While I'm building this, I'm going to work around a DDN which stands for "Data Delivery Network" 
-based on a personal idea to access data from private networks without opening a port for a service, 
-touching a firewall.  
-
-Feel free to join the project community using the links below.
+Feel free to join the community, using the links below.
 
 ## Docs & Community
 
 * [Website and Documentation](https://centralrouter.github.io/)
 * [Discord](https://discord.gg/n9yFj2F)
+
+## Getting started
+
+By following these steps, you will be running your own CentralRouter instance 
+based on your preferences.
+
+ * Install [NodeJS](https://nodejs.org/)
+ * Install [MongoDB](https://www.mongodb.com/)
+ * Install [Redis](https://redis.io/)
+ 
+ * Install dependencies:
+    ```bash
+    $ npm install
+    ```
+
+* Start your CentralRouter instance:
+    ```bash
+    $ node index.js
+    ```
+
+* Alternative way is docker-compose:
+    ```bash
+    $ docker-compose up
+    ```
 
 ## Interfaces
 
@@ -50,6 +47,20 @@ Interfaces currently implemented:
 | ---- | ---- | ----------- |
 | HTTP |  80  | HTTP methods are served. |
 
+## Configuration
+
+CentralRouter configuration is relies on dotenv, so all of the variables can be found
+inside the .env file in the root directory.
+
+Important variables with their descriptions:
+
+| Name | Description |
+| ---- | ----------- |
+| APP_NAME | Sets the instance's webserver name. |
+| APP_API_PREFIX | Sets the REST API prefix for the web-interface. |
+| WSS_NAME | Sets the instance's wss name. |
+| INTERFACES_ENABLED | Configures the enabled services on your instance. Seperate each by a comma. |
+
 ## Testing
 
 Testing is done using [mocha](https://mochajs.org/):
@@ -58,6 +69,13 @@ Testing is done using [mocha](https://mochajs.org/):
 $ mocha test
 ```
 
+## Contributors
+
+* [Milan Zeisler](https://github.com/LeFizzy/)
+
+We're always happy to review and accept issues/PR's.
+Feel free to share your ideas in our Discord server, or either via the TrelloBoard.
+
 ## License
 
-[GPL-3.0](LICENSE)
+Copyright (c) 2018 Milan Zeisler. See the [License](LICENSE) file for license rights and limitations. This project is licensed under the terms of the GPL-3.0 license.
