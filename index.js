@@ -1,5 +1,6 @@
 const databaseService = require('./lib/database.js');
 const socketService = require('./lib/wss.js');
+const master = require('./lib/middleware/masterConnection.js');
 const redis = require('redis');
 const dotenv = require('dotenv').config();
 
@@ -22,7 +23,7 @@ class App {
     constructor(appWebName, appWebPort, appDomain, appWssName, 
         appWssPort, appDBHost, appDBPort, appDBName, 
         appDBUser, appDBPass, redisHost, redisPort, 
-        appLocale, interfacesEnabled) {
+        appLocale, interfacesEnabled, publishOnMaster) {
         this.webName    = appWebName || "CentralRouter:WEB";
         this.webPort    = appWebPort || 8080;
         this.webDomain  = appDomain  || "localhost";
@@ -37,6 +38,7 @@ class App {
         this.redisPort  = redisPort  || 6379;
         this.locale     = require(`./lib/translations/${appLocale}.json`) || require(`./lib/translations/en.json`);
         this.interfaces = interfacesEnabled || "";
+        this.public     = publishOnMaster || true;
     }
 
     /**
@@ -67,6 +69,13 @@ class App {
         } else {
             console.log(this.locale.interfaces.missing);
         }
+
+        if(this.public) {
+            master.connect(
+                this.webDomain, 
+                this.interfaces
+            );
+        }
     }
 }
 
@@ -84,6 +93,7 @@ const appInstance = new App(
     process.env.REDIS_HOST,
     process.env.REDIS_PORT,
     process.env.APP_LOCALE,
-    process.env.INTERFACES_ENABLED
+    process.env.INTERFACES_ENABLED,
+    process.env.PUBLISH_ON_MASTER
 );
 appInstance.init();
