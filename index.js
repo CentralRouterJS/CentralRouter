@@ -23,7 +23,7 @@ class App {
     constructor(appWebName, appWebPort, appDomain, appWssName, 
         appWssPort, appDBHost, appDBPort, appDBName, 
         appDBUser, appDBPass, redisHost, redisPort, 
-        appLocale, interfacesEnabled, publishOnMaster) {
+        appLocale, interfacesEnabled, publishOnMaster, masterServer) {
         this.webName    = appWebName || "CentralRouter:WEB";
         this.webPort    = appWebPort || 8080;
         this.webDomain  = appDomain  || "localhost";
@@ -39,6 +39,7 @@ class App {
         this.locale     = require(`./lib/translations/${appLocale}.json`) || require(`./lib/translations/en.json`);
         this.interfaces = interfacesEnabled || "";
         this.public     = publishOnMaster || true;
+        this.masterUrl  = masterServer || "centralrouter-master:14886";
     }
 
     /**
@@ -73,7 +74,9 @@ class App {
         if(this.public) {
             master.connect(
                 this.webDomain, 
-                this.interfaces
+                this.webPort,
+                this.interfaces,
+                this.masterUrl
             );
         }
     }
@@ -94,6 +97,7 @@ const appInstance = new App(
     process.env.REDIS_PORT,
     process.env.APP_LOCALE,
     process.env.INTERFACES_ENABLED,
-    process.env.PUBLISH_ON_MASTER
+    process.env.PUBLISH_ON_MASTER,
+    process.env.MASTER_SERVER
 );
 appInstance.init();
