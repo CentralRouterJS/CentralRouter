@@ -13,5 +13,9 @@
         "available"         : "[INTERFACES] Interfaces enabled: ",
         "missing"           : "[INTERFACES] There are no interfaces enabled.",
         "init_http"         : "[INTERFACES] HTTP Interface initialized."
+    },
+    "master": {
+        "connect": "Master connection established.",
+        "disconnect": "Master connection failed."
     }
 }

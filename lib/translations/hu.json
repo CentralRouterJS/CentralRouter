@@ -13,5 +13,9 @@
         "available"         : "[INTERFÉSZEK] Engedélyezett interfészek: ",
         "missing"           : "[INTERFÉSZEK] Nincs interfész engedélyezve.",
         "init_http"         : "[INTERFÉSZEK] HTTP Interface inicializálva."
+    },
+    "master": {
+        "connect": "Master kapcsolat létrejött.",
+        "disconnect": "Master kapcsolat sikertelen."
     }
 }
