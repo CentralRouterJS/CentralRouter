@@ -21,7 +21,7 @@ class App {
      * @param {String} interfacesEnabled
      */
     constructor(appWebName, appWebPort, appDomain, appWssName, 
-        appWssPort, appDBHost, appDBPort, appDBName, 
+        appWssPort, appHttpsStatus, appDBHost, appDBPort, appDBName, 
         appDBUser, appDBPass, redisHost, redisPort, 
         appLocale, interfacesEnabled, publishOnMaster, masterServer) {
         this.webName    = appWebName || "CentralRouter:WEB";
@@ -29,6 +29,7 @@ class App {
         this.webDomain  = appDomain  || "localhost";
         this.wssName    = appWssName || "CentralRouter:WSS";
         this.wssPort    = appWssPort || 8081;
+        this.httpsState = appHttpsStatus || "http";
         this.dbHost     = appDBHost  || "localhost";
         this.dbPort     = appDBPort  || 27017;
         this.dbName     = appDBName  || "centralrouter";
@@ -88,6 +89,7 @@ const appInstance = new App(
     process.env.APP_DOMAIN,
     process.env.WSS_NAME,
     process.env.WSS_PORT,
+    process.env.HTTPS_ENABLED,
     process.env.DATABASE_HOST,
     process.env.DATABASE_PORT,
     process.env.DATABASE_NAME,
