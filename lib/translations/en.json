@@ -1,13 +1,14 @@
 {
     "app": {
+        "service"           : "[SERVICE]",
         "express_start"     : "started listening on",
         "wss_start"         : "started listening on",
-        "database_conn"     : "Database connection established with",
-        "redis_conn"        : "Redis connection established with"
+        "database_conn"     : "[MongoDB] Database connection established with",
+        "redis_conn"        : "[Redis] Redis connection established with"
     },
     "wss": {
-        "log_connect"       : "Socket Interface client connected to the services from: ",
-        "log_disconnect"    : "Socket Interface client disconnected from the services."
+        "log_connect"       : "[WSS] Socket Interface client connected to the services from: ",
+        "log_disconnect"    : "[WSS] Socket Interface client disconnected from the services."
     },
     "interfaces": {
         "available"         : "[INTERFACES] Interfaces enabled: ",
@@ -15,7 +16,7 @@
         "init_http"         : "[INTERFACES] HTTP Interface initialized."
     },
     "master": {
-        "connect": "Master connection established.",
-        "disconnect": "Master connection failed."
+        "connect": "[MASTER] Master connection established.",
+        "disconnect": "[MASTER] Master connection failed."
     }
 }
