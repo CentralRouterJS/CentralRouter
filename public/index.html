@@ -1,20 +1,75 @@
 <!doctype html>
 <html>
-    <head>
-        <title>CentralRouterJS Server Manager (test)</title>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Add new service: </h1>
 
-            <form method="POST" action="/api/v1/addserver">
-                <input type="text" name="name" placeholder="Server name" />
-                <input type="text" name="address" placeholder="Server IP address" />
-                <select name="type">
-                    <option value="http">HTTP service</option>
-                </select>
-                <input type="submit" value="Submit" />
-            </form>
+<head>
+    <title>CentralRouterJS | Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">CentralRouter instance</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="newservice.html">New service</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
         </div>
-    </body>
-</htmly>
+    </nav>
+    <section id="marketing">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-11 text-center">
+                    <h3>CentralRouter instance</h3>
+                    <p>Access your private network services from public networks, without even forwarding a port on a
+                        router.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container text-center">
+            <h3>We are</h3><br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="marketing-icon">
+                        <h3 class="glyphicon glyphicon-lock"></h3>
+                    </div>
+                    <h4>Secure</h4>
+                </div>
+                <div class="col-sm-4">
+                    <div class="marketing-icon">
+                        <h3 class="glyphicon glyphicon-home"></h3>
+                    </div>
+                    <h4>Private</h4>
+                </div>
+                <div class="col-sm-4">
+                    <div class="marketing-icon">
+                        <h3 class="glyphicon glyphicon-ok"></h3>
+                    </div>
+                    <h4>Fast</h4>
+                </div>
+            </div>
+        </div><br>
+    </section>
+
+    <footer class="container-fluid text-center">
+        <p>CentralRouter instance &copy 2018</p>
+    </footer>
+</body>
+
+</html>
