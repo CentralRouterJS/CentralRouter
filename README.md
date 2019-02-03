@@ -1,4 +1,4 @@
-[![CentralRouter Logo](https://image.ibb.co/mSKP3z/centralrouter_branding_logo.png)](https://centralrouter.github.io/)
+[![CentralRouter Logo](https://i.ibb.co/mDKhvCc/68747470733a2f2f696d6167652e6962622e636f2f6d534b50337a2f63656e7472616c726f757465725f6272616e64696e675f6c6f676f2e706e67.png)](https://centralrouter.github.io/)
 [![Build Status](https://travis-ci.org/CentralRouterJS/CentralRouter.svg?branch=master)](https://travis-ci.org/CentralRouterJS/CentralRouter) [Trello board](https://trello.com/b/fp6jPIC9/centralrouter-roadmap)
 
 Fast, modern Data Delivery Network built on top of [NodeJS](http://nodejs.org). 
@@ -60,6 +60,7 @@ Important variables with their descriptions:
 | APP_API_PREFIX | Sets the REST API prefix for the web-interface. |
 | WSS_NAME | Sets the instance's wss name. |
 | INTERFACES_ENABLED | Configures the enabled services on your instance. Seperate each by a comma. |
+| PUBLISH_ON_MASTER | By default, all CentralRouter instances showing up on the public serverlist. |
 
 ## Testing
 
