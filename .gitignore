@@ -4,3 +4,4 @@ dump.rdb
 data/
 .package.json.swp
 npm-debug.log
+.env
