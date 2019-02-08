@@ -13,10 +13,23 @@
     "interfaces": {
         "available"         : "[INTERFÉSZEK] Engedélyezett interfészek: ",
         "missing"           : "[INTERFÉSZEK] Nincs interfész engedélyezve.",
-        "init_http"         : "[INTERFÉSZEK] HTTP Interface inicializálva."
+        "init_http"         : "[INTERFÉSZEK] HTTP Interface inicializálva.",
+        "http_interface": {
+            "method_arrow"  : "a következőhöz: ",
+            "method_ok"     : "Ok.",
+            "method_bg"     : "Hibás átjáró.",
+            "method_is"     : "Belső szerverhiba.",
+            "get_method"    : "[HTTPINTERFÉSZ] GET ",
+            "post_method"   : "[HTTPINTERFÉSZ] POST ",
+            "put_method"    : "[HTTPINTERFÉSZ] PUT ",
+            "delete_method" : "[HTTPINTERFÉSZ] DELETE " 
+        }
     },
     "master": {
         "connect": "[Master] Master kapcsolat létrejött.",
         "disconnect": "[MASTER] Master kapcsolat sikertelen."
+    },
+    "api": {
+        "wrong_ip_address"  : "A megadott IP cím nem megfelelő."
     }
 }

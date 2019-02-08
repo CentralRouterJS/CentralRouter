@@ -13,10 +13,23 @@
     "interfaces": {
         "available"         : "[INTERFACES] Interfaces enabled: ",
         "missing"           : "[INTERFACES] There are no interfaces enabled.",
-        "init_http"         : "[INTERFACES] HTTP Interface initialized."
+        "init_http"         : "[INTERFACES] HTTP Interface initialized.",
+        "http_interface": {
+            "method_arrow"  : "to",
+            "method_ok"     : "Ok.",
+            "method_bg"     : "Bad Gateway.",
+            "method_is"     : "Internal Server Error.",
+            "get_method"    : "[HTTPINTERFACE] GET ",
+            "post_method"   : "[HTTPINTERFACE] POST ",
+            "put_method"    : "[HTTPINTERFACE] PUT ",
+            "delete_method" : "[HTTPINTERFACE] DELETE " 
+        }
     },
     "master": {
-        "connect": "[MASTER] Master connection established.",
-        "disconnect": "[MASTER] Master connection failed."
+        "connect":          "[MASTER] Master connection established.",
+        "disconnect":       "[MASTER] Master connection failed."
+    },
+    "api": {
+        "wrong_ip_address"  : "The entered IP address is invaild."
     }
 }
