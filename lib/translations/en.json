@@ -19,10 +19,10 @@
             "method_ok"     : "Ok.",
             "method_bg"     : "Bad Gateway.",
             "method_is"     : "Internal Server Error.",
-            "get_method"    : "[HTTPINTERFACE] GET ",
-            "post_method"   : "[HTTPINTERFACE] POST ",
-            "put_method"    : "[HTTPINTERFACE] PUT ",
-            "delete_method" : "[HTTPINTERFACE] DELETE " 
+            "get_method"    : "[HTTPINTERFACE] GET",
+            "post_method"   : "[HTTPINTERFACE] POST",
+            "put_method"    : "[HTTPINTERFACE] PUT",
+            "delete_method" : "[HTTPINTERFACE] DELETE" 
         }
     },
     "master": {

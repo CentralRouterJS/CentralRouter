@@ -15,14 +15,14 @@
         "missing"           : "[INTERFÉSZEK] Nincs interfész engedélyezve.",
         "init_http"         : "[INTERFÉSZEK] HTTP Interface inicializálva.",
         "http_interface": {
-            "method_arrow"  : "a következőhöz: ",
+            "method_arrow"  : "a következőhöz:",
             "method_ok"     : "Ok.",
             "method_bg"     : "Hibás átjáró.",
             "method_is"     : "Belső szerverhiba.",
-            "get_method"    : "[HTTPINTERFÉSZ] GET ",
-            "post_method"   : "[HTTPINTERFÉSZ] POST ",
-            "put_method"    : "[HTTPINTERFÉSZ] PUT ",
-            "delete_method" : "[HTTPINTERFÉSZ] DELETE " 
+            "get_method"    : "[HTTPINTERFÉSZ] GET",
+            "post_method"   : "[HTTPINTERFÉSZ] POST",
+            "put_method"    : "[HTTPINTERFÉSZ] PUT",
+            "delete_method" : "[HTTPINTERFÉSZ] DELETE" 
         }
     },
     "master": {
