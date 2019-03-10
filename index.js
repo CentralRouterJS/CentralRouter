@@ -7,11 +7,14 @@ const dotenv = require('dotenv').config();
 /** Class representing the CentralRouter instance. */
 class App {
     /**
-     * Create a instance.
+     * Create a CentralRouter instance.
      * @param {String} appWebName 
      * @param {Number} appWebPort 
+     * @param {String} appDomain
      * @param {String} appWssName 
-     * @param {Number} appWssPort 
+     * @param {Number} appWssPort
+     * @param {Boolean} appHttpsStatus
+     * @param {Boolean} appAuthRequired 
      * @param {String} appDBHost
      * @param {Number} appDBPort
      * @param {String} appDBName
@@ -19,6 +22,8 @@ class App {
      * @param {String} appDBPass
      * @param {String} appLocale 
      * @param {String} interfacesEnabled
+     * @param {Boolean} publishOnMaster
+     * @param {String} masterServer
      */
     constructor(appWebName, appWebPort, appDomain, appWssName, 
         appWssPort, appHttpsStatus, appAuthRequired, appDBHost, appDBPort, appDBName, 
