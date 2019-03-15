@@ -37,6 +37,7 @@
     "redis": "^2.8.0",
     "socket.io": "^2.1.1",
     "socket.io-client": "^2.2.0",
+    "socket.io-stream": "^0.9.1",
     "wildcard-subdomains": "^1.1.0"
   },
   "devDependencies": {
