@@ -1,5 +1,13 @@
-[![CentralRouter Logo](https://i.ibb.co/mDKhvCc/68747470733a2f2f696d6167652e6962622e636f2f6d534b50337a2f63656e7472616c726f757465725f6272616e64696e675f6c6f676f2e706e67.png)](https://centralrouter.github.io/)
-[![Build Status](https://travis-ci.org/CentralRouterJS/CentralRouter.svg?branch=master)](https://travis-ci.org/CentralRouterJS/CentralRouter) [Trello board](https://trello.com/b/fp6jPIC9/centralrouter-roadmap)
+[![CentralRouter Logo](https://i.ibb.co/zmV5k3K/68747470733a2f2f696d6167652e6962622e636f2f6d534b50337a2f63656e7472616c726f757465725f6272616e64696e675f6c6f676f2e706e67.png)](https://centralrouter.github.io/)
+
+<p align="center">
+    [![Build Status](https://travis-ci.org/CentralRouterJS/CentralRouter.svg?branch=master)](https://travis-ci.org/CentralRouterJS/CentralRouter)
+    <img src="https://badges.frapsoft.com/os/v2/open-source.png?v=103" />
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" />
+    <img src="https://img.shields.io/github/package-json/v/CentralRouterJS/CentralRouter.svg" />
+    <img src="https://img.shields.io/github/license/CentralRouterJS/CentralRouter.svg?color=green" />
+    [Trello board](https://trello.com/b/fp6jPIC9/centralrouter-roadmap)
+</p>
 
 Fast, modern Data Delivery Network built on top of [NodeJS](http://nodejs.org). 
 CentralRouter is a learning project for me, based on a simple idea to access data from private
@@ -45,7 +53,7 @@ Interfaces currently implemented:
 
 | Name | Port | Description |
 | ---- | ---- | ----------- |
-| HTTP |  80  | HTTP methods are served. |
+| HTTP |  80  | Major HTTP methods are implemented. |
 
 ## Configuration
 
@@ -79,4 +87,4 @@ Feel free to share your ideas in our Discord server, or either via the TrelloBoa
 
 ## License
 
-Copyright (c) 2018 Milan Zeisler. See the [License](LICENSE) file for license rights and limitations. This project is licensed under the terms of the GPL-3.0 license.
+Copyright (c) 2019 Milan Zeisler. See the [License](LICENSE) file for license rights and limitations. This project is licensed under the terms of the GPL-3.0 license.
