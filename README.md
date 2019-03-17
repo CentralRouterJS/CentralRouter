@@ -1,6 +1,5 @@
-[![CentralRouter Logo](https://i.ibb.co/zmV5k3K/68747470733a2f2f696d6167652e6962622e636f2f6d534b50337a2f63656e7472616c726f757465725f6272616e64696e675f6c6f676f2e706e67.png)](https://centralrouter.github.io/)
-
 <p align="center">
+    <img src="https://i.ibb.co/XCnG6wH/68747470733a2f2f696d6167652e6962622e636f2f6d534b50337a2f63656e7472616c726f757465725f6272616e64696e675f6c6f676f2e706e67.png">
     <img src="https://img.shields.io/travis/CentralRouterJS/CentralRouter.svg" />
     <img src="https://badges.frapsoft.com/os/v2/open-source.png?v=103" />
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" />
