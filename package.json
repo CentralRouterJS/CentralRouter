@@ -1,6 +1,6 @@
 {
   "name": "centralrouter",
-  "version": "1.0.66",
+  "version": "1.0.67",
   "description": "A DataDeliveryNetwork built on top of NodeJS.",
   "main": "index.js",
   "scripts": {
