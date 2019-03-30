@@ -6,7 +6,7 @@
     <img src="https://img.shields.io/travis/CentralRouterJS/CentralRouter.svg" />
     <img src="https://badges.frapsoft.com/os/v2/open-source.png?v=103" />
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" />
-    <img src="https://img.shields.io/github/package-json/v/CentralRouterJS/CentralRouter.svg" />
+    <img src="https://img.shields.io/badge/dynamic/json.svg?color=blue&label=version&prefix=v&query=version&url=https%3A%2F%2Fraw.githubusercontent.com%2FCentralRouterJS%2FCentralRouter%2Fmaster%2Fpackage.json" />
     <img src="https://img.shields.io/github/license/CentralRouterJS/CentralRouter.svg?color=green" />
     <a href="https://trello.com/b/fp6jPIC9/centralrouter-roadmap"><img src="https://img.shields.io/badge/Trello-ideas-blue.svg"/></a>
 </p>
