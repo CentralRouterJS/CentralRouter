@@ -10,6 +10,10 @@
         "log_connect"       : "[WSS] Socket Interface client connected to the services from: ",
         "log_disconnect"    : "[WSS] Socket Interface client disconnected from the services."
     },
+    "tcp": {
+        "prefix": "[TCP]",
+        "start": "started listening on"
+    },
     "interfaces": {
         "available"         : "[INTERFACES] Interfaces enabled: ",
         "missing"           : "[INTERFACES] There are no interfaces enabled.",

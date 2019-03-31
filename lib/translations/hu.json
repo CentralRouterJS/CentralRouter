@@ -10,6 +10,10 @@
         "log_connect"       : "[WSS] Socket Interface kliens csatlakozott a szolgáltatáshoz erről: ",
         "log_disconnect"    : "[WSS] Socket Interface kliens lecsatlakozott a szolgáltatásról."
     },
+    "tcp": {
+        "prefix": "[TCP]",
+        "start": "elindult a következő porton:"
+    },
     "interfaces": {
         "available"         : "[INTERFÉSZEK] Engedélyezett interfészek: ",
         "missing"           : "[INTERFÉSZEK] Nincs interfész engedélyezve.",
