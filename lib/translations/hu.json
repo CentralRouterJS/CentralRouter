@@ -1,17 +1,17 @@
 {
     "app": {
         "service"           : "[SZOLGÁLTATÁS]",
-        "express_start"     : "elindult a következő porton: ",
-        "wss_start"         : "elindult a következő porton: ",
-        "database_conn"     : "[MongoDB] Adatbázis kapcsolat létrejött a kövekezővel: ",
-        "redis_conn"        : "[Redis] Redis kapcsolat létrejött a következővel: "
+        "express_start"     : "elindult a következő porton:",
+        "wss_start"         : "elindult a következő porton:",
+        "database_conn"     : "[MongoDB] Adatbázis kapcsolat létrejött a kövekezővel:",
+        "redis_conn"        : "[Redis] Redis kapcsolat létrejött a következővel:"
     },
     "wss": {
-        "log_connect"       : "[WSS] Socket Interface kliens csatlakozott a szolgáltatáshoz erről: ",
+        "log_connect"       : "[WSS] Socket Interface kliens csatlakozott a szolgáltatáshoz erről:",
         "log_disconnect"    : "[WSS] Socket Interface kliens lecsatlakozott a szolgáltatásról."
     },
     "interfaces": {
-        "available"         : "[INTERFÉSZEK] Engedélyezett interfészek: ",
+        "available"         : "[INTERFÉSZEK] Engedélyezett interfészek:",
         "missing"           : "[INTERFÉSZEK] Nincs interfész engedélyezve.",
         "init_http"         : "[INTERFÉSZEK] HTTP Interface inicializálva.",
         "http_interface": {

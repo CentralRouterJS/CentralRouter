@@ -7,7 +7,7 @@
         "redis_conn"        : "[Redis] Redis connection established with"
     },
     "wss": {
-        "log_connect"       : "[WSS] Socket Interface client connected to the services from: ",
+        "log_connect"       : "[WSS] Socket Interface client connected to the services from:",
         "log_disconnect"    : "[WSS] Socket Interface client disconnected from the services."
     },
     "interfaces": {
