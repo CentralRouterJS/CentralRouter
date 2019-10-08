@@ -21,7 +21,6 @@ Feel free to join the community or share your ideas/suggestions, by using the li
 
 * [Website and Documentation](https://centralrouter.github.io/)
 * [Trello](https://trello.com/b/fp6jPIC9/centralrouter-roadmap)
-* [Discord](https://discord.gg/n9yFj2F)
 
 ## Getting started
 
