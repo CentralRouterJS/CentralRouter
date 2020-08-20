@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/CentralRouterJS/CentralRouter#readme",
   "dependencies": {
-    "bcrypt": "^3.0.1",
+    "bcrypt": "^5.0.0",
     "delivery": "0.0.6",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
