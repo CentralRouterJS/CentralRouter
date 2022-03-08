@@ -82,7 +82,7 @@ $ mocha test
 
 ## Contributors
 
-* [Milan Zeisler](https://github.com/LeFizzy/)
+* [https://github.com/LeFizzy](https://github.com/LeFizzy/)
 
 We're always happy to review and accept issues/PR's.
 Feel free to share your ideas in our Discord server, or either via the TrelloBoard.
