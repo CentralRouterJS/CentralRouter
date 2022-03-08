@@ -82,11 +82,11 @@ $ mocha test
 
 ## Contributors
 
-* [https://github.com/LeFizzy](https://github.com/LeFizzy/)
+* [LeFizzy](https://github.com/LeFizzy/)
 
 We're always happy to review and accept issues/PR's.
 Feel free to share your ideas in our Discord server, or either via the TrelloBoard.
 
 ## License
 
-Copyright (c) 2019 Milan Zeisler. See the [License](LICENSE) file for license rights and limitations. This project is licensed under the terms of the GPL-3.0 license.
+Copyright (c) 2019 LeFizzy. See the [License](LICENSE) file for license rights and limitations. This project is licensed under the terms of the GPL-3.0 license.
